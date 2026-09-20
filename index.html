@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abid Sobhan — Software Engineering Student & Full-Stack Developer</title>
+<meta name="description" content="Portfolio of Abid Sobhan — final-year Software Engineering student at Swinburne University, full-stack and AI-integrated application developer.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%231F3A5F%22/><text x=%2250%22 y=%2268%22 font-size=%2255%22 fill=%22white%22 font-family=%22Georgia,serif%22 text-anchor=%22middle%22>A</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="noise-overlay" aria-hidden="true"></div>
+
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a href="#top" class="brand">AS<span class="brand-dot">.</span></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle dark/light theme" title="Toggle theme">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button id="navToggle" class="icon-btn nav-toggle" aria-label="Toggle menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="eyebrow reveal">Available from early 2027 &middot; Melbourne, VIC</p>
+      <h1 class="reveal">Abid Sobhan</h1>
+      <p class="hero-role reveal">Software Engineering Student &middot; Full-Stack Developer &middot; Cloud &amp; AI-Integrated Applications</p>
+      <p class="hero-lede reveal">Final-year Software Engineering student at Swinburne University of Technology, building full-stack web applications and AI-integrated products — and looking for my next role.</p>
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#certifications" class="btn btn-ghost">Certifications</a>
+        <button class="btn btn-ghost" id="heroChatBtn">Ask my AI Assistant</button>
+      </div>
+      <div class="hero-links reveal">
+        <a href="https://github.com/abid8195" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/abid-sobhan-60a768224/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </div>
+    <div class="hero-avatar reveal" aria-hidden="true">AS</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <p class="section-eyebrow reveal">About</p>
+      <h2 class="reveal">A bit about how I work</h2>
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p>I'm a final-year Software Engineering student at Swinburne University of Technology (BEng, expected December 2026), and a recipient of the <strong>Swinburne Excellence Scholarship</strong>, covering 75% of my tuition in recognition of academic merit.</p>
+          <p>I build full-stack web applications — React and TypeScript on the front end, Node.js/Express, Flask, and C# on the back end — and lately I've been especially focused on <strong>AI-integrated products</strong>: applications that call the Claude and OpenAI APIs as part of the product itself, not just as a coding aid. My most complete project, <a href="#project-calazm">Calazm</a>, is an AI nutrition tracker where a vision model reads a meal photo while all of the actual calorie and macro math happens deterministically in code — the model describes, the database quantifies.</p>
+          <p>Alongside my degree, I've worked as a Junior IT Solutions Engineer at Aakonsult Services / MULINK Technologies, supporting enterprise systems across Microsoft 365, Azure, and AWS and managing Salesforce case workflows for 50+ users, and I currently volunteer as an App Developer with BetaBuilders, collaborating with a remote team of 40+ developers across time zones.</p>
+          <p>I like picking up technical domains I don't already know — I taught myself the fundamentals of quantum computing from scratch to build a working quantum machine learning pipeline — and I bring the same habit of methodical, documented problem-solving from three years in fast-paced customer service before I wrote a line of production code.</p>
+        </div>
+        <div class="about-facts reveal">
+          <div class="fact-card">
+            <span class="fact-label">Education</span>
+            <span class="fact-value">BEng Software Engineering<br>Swinburne University · Dec 2026</span>
+          </div>
+          <div class="fact-card">
+            <span class="fact-label">Based in</span>
+            <span class="fact-value">Melbourne, VIC, Australia</span>
+          </div>
+          <div class="fact-card">
+            <span class="fact-label">Focus areas</span>
+            <span class="fact-value">Full-stack dev · Cloud · AI-integrated apps</span>
+          </div>
+          <div class="fact-card">
+            <span class="fact-label">Currently</span>
+            <span class="fact-value">Volunteer App Developer @ BetaBuilders</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <p class="section-eyebrow reveal">Skills</p>
+      <h2 class="reveal">Technical toolkit</h2>
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <h3>Languages</h3>
+          <div class="chip-row">
+            <span class="chip">Python</span><span class="chip">C#</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span><span class="chip">SQL</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Frontend</h3>
+          <div class="chip-row">
+            <span class="chip">React</span><span class="chip">Next.js</span><span class="chip">Tailwind CSS</span><span class="chip">Vite</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Backend</h3>
+          <div class="chip-row">
+            <span class="chip">Node.js</span><span class="chip">Express.js</span><span class="chip">Flask</span><span class="chip">REST APIs</span><span class="chip">Prisma ORM</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Cloud &amp; Data</h3>
+          <div class="chip-row">
+            <span class="chip">Microsoft Azure</span><span class="chip">AWS</span><span class="chip">PostgreSQL</span><span class="chip">SQLite</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>AI / LLM</h3>
+          <div class="chip-row">
+            <span class="chip">Claude API</span><span class="chip">OpenAI API</span><span class="chip">LLM-integrated apps</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Tools</h3>
+          <div class="chip-row">
+            <span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Linux/Unix</span><span class="chip">Salesforce</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="container">
+      <p class="section-eyebrow reveal">Experience</p>
+      <h2 class="reveal">Where I've worked</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>Junior IT Solutions Engineer <span>· Intern</span></h3>
+              <span class="timeline-date">Jun 2026 – Aug 2026</span>
+            </div>
+            <p class="timeline-org">Aakonsult Services / MULINK Technologies &middot; Melbourne, VIC</p>
+            <ul>
+              <li>Supported enterprise systems across Microsoft 365, SharePoint, Azure, and AWS environments for 50+ users, working directly with company leadership to scope solutions.</li>
+              <li>Managed Salesforce case workflows, technical support activities, and client issue analysis in a professional IT consulting environment.</li>
+              <li>Improved process efficiency by close to 20% through methodical troubleshooting and documentation.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>App Developer <span>· Volunteer</span></h3>
+              <span class="timeline-date">May 2026 – Present</span>
+            </div>
+            <p class="timeline-org">BetaBuilders &middot; Remote</p>
+            <ul>
+              <li>Collaborate with a remote team of 40+ developers across time zones, using TypeScript and Git-based workflows to build, test, and ship features.</li>
+              <li>Contributed to a 15% increase in user engagement through feature development.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>Crew Member</h3>
+              <span class="timeline-date">3+ years</span>
+            </div>
+            <p class="timeline-org">McDonald's &middot; Malvern East, Melbourne</p>
+            <ul>
+              <li>Maintained consistently high performance ratings for teamwork and reliability in a fast-paced, high-volume environment.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <p class="section-eyebrow reveal">Projects</p>
+      <h2 class="reveal">Things I've built</h2>
+
+      <div class="project-card reveal" id="project-calazm">
+        <div class="project-head">
+          <h3>Calazm — AI Nutrition Companion</h3>
+          <a href="https://github.com/abid8195/calazm" target="_blank" rel="noopener" class="project-link">Code ↗</a>
+        </div>
+        <div class="chip-row small">
+          <span class="chip">Next.js</span><span class="chip">TypeScript</span><span class="chip">Prisma</span><span class="chip">PostgreSQL/SQLite</span><span class="chip">Claude API</span>
+        </div>
+        <p>An AI-powered nutrition tracker that estimates meals from photos or natural language. The architecture deliberately separates concerns: Claude's vision model never estimates calories directly — it returns a food label, an estimated weight, and a confidence score, and a deterministic resolver computes actual nutrition from a real per-100g database. <em>The model describes, the database quantifies.</em> The app uses three different Claude models for three distinct jobs — vision for photo recognition, a fast model for text normalization, and a larger model for weekly narrative summaries — and falls back gracefully to an offline heuristic if the API is ever unavailable.</p>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-head">
+          <h3>DataLens — Local-First Data Health Checker</h3>
+          <a href="https://github.com/abid8195/datalens" target="_blank" rel="noopener" class="project-link">Code ↗</a>
+        </div>
+        <div class="chip-row small">
+          <span class="chip">TypeScript</span><span class="chip">React</span><span class="chip">Vite</span>
+        </div>
+        <p>A privacy-first, local-first tool that profiles CSV, Excel, and JSON files entirely in the browser — turning messy datasets into column-level statistics, distributions, and a deterministic data-quality score, without ever uploading the data anywhere.</p>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-head">
+          <h3>ProdTrack — Full-Stack Productivity Dashboard</h3>
+          <a href="https://github.com/abid8195/Productivity_Analytics_Dashboard" target="_blank" rel="noopener" class="project-link">Code ↗</a>
+        </div>
+        <div class="chip-row small">
+          <span class="chip">React</span><span class="chip">Express.js</span><span class="chip">SQLite</span><span class="chip">Recharts</span>
+        </div>
+        <p>A full-stack analytics dashboard for tracking and visualizing personal productivity, with JWT authentication, CRUD operations, filtering systems, and a responsive, SaaS-style interface.</p>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-head">
+          <h3>QML DataFlow Studio — Quantum Machine Learning Pipeline</h3>
+          <a href="https://github.com/abid8195/EnG_ProjectA" target="_blank" rel="noopener" class="project-link">Code ↗</a>
+        </div>
+        <div class="chip-row small">
+          <span class="chip">Python</span><span class="chip">Flask</span><span class="chip">Qiskit</span><span class="chip">JavaScript</span>
+        </div>
+        <p>Self-taught quantum computing fundamentals from scratch to build a modular quantum machine learning pipeline, orchestrating multiple features through REST APIs with a Python/Flask backend.</p>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-head">
+          <h3>AI Chatbot Application</h3>
+          <a href="https://github.com/abid8195/AI-Chatbot-Rufus-the-Egg-Enthusiast" target="_blank" rel="noopener" class="project-link">Code ↗</a>
+        </div>
+        <div class="chip-row small">
+          <span class="chip">JavaScript</span><span class="chip">OpenAI API</span><span class="chip">LLM Integration</span>
+        </div>
+        <p>A customer-facing web application integrating the OpenAI API to handle 200+ dynamic user queries, iterated through several architectures to improve response consistency by 25%.</p>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-head">
+          <h3>Azure Cloud Security Deployment</h3>
+        </div>
+        <div class="chip-row small">
+          <span class="chip">Azure VNet</span><span class="chip">NSG</span><span class="chip">Windows Server</span>
+        </div>
+        <p>Designed and deployed a cloud network security architecture end to end, segmenting and securing public/private subnets for 100+ simulated users, and configured a Windows Server VM to model enterprise remote-access scenarios.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <p class="section-eyebrow reveal">Certifications</p>
+      <h2 class="reveal">Continued learning</h2>
+      <p class="reveal cert-intro">All certificates are available to view in full on Google Drive.</p>
+      <a class="btn btn-primary reveal" href="https://drive.google.com/drive/u/0/folders/1y88Zyl-kYHkN8EToo9BZAwYTRRW4lRBJ" target="_blank" rel="noopener">View All Certificates ↗</a>
+      <div class="cert-grid reveal">
+        <a class="cert-card" href="https://drive.google.com/drive/u/0/folders/1y88Zyl-kYHkN8EToo9BZAwYTRRW4lRBJ" target="_blank" rel="noopener">
+          <span class="cert-name">Advanced Python Certification</span>
+          <span class="cert-issuer">Udemy</span>
+        </a>
+        <a class="cert-card" href="https://drive.google.com/drive/u/0/folders/1y88Zyl-kYHkN8EToo9BZAwYTRRW4lRBJ" target="_blank" rel="noopener">
+          <span class="cert-name">Data Structures and Algorithms in Python</span>
+          <span class="cert-issuer">Udemy</span>
+        </a>
+        <a class="cert-card" href="https://drive.google.com/drive/u/0/folders/1y88Zyl-kYHkN8EToo9BZAwYTRRW4lRBJ" target="_blank" rel="noopener">
+          <span class="cert-name">SQL Bootcamp: Implementing PostgreSQL</span>
+          <span class="cert-issuer">Udemy</span>
+        </a>
+        <a class="cert-card" href="https://drive.google.com/drive/u/0/folders/1y88Zyl-kYHkN8EToo9BZAwYTRRW4lRBJ" target="_blank" rel="noopener">
+          <span class="cert-name">Linux Command Line Bootcamp</span>
+          <span class="cert-issuer">Udemy</span>
+        </a>
+        <a class="cert-card" href="https://drive.google.com/drive/u/0/folders/1y88Zyl-kYHkN8EToo9BZAwYTRRW4lRBJ" target="_blank" rel="noopener">
+          <span class="cert-name">Introduction to Cyber Security Essentials</span>
+          <span class="cert-issuer">Quitch</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-alt">
+    <div class="container contact-inner">
+      <p class="section-eyebrow reveal">Contact</p>
+      <h2 class="reveal">Let's talk</h2>
+      <p class="reveal contact-lede">I'm looking for full-stack, cloud, or AI-integrated engineering roles starting early 2027 — reach out any time.</p>
+      <div class="contact-links reveal">
+        <a href="mailto:103802241@student.swin.edu.au" class="btn btn-primary">Email Me</a>
+        <a href="https://www.linkedin.com/in/abid-sobhan-60a768224/" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn ↗</a>
+        <a href="https://github.com/abid8195" target="_blank" rel="noopener" class="btn btn-ghost">GitHub ↗</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 Abid Sobhan. Built with plain HTML, CSS &amp; JS — deployed on Vercel.</p>
+  </div>
+</footer>
+
+<!-- CHATBOT WIDGET -->
+<button id="chatFab" class="chat-fab" aria-label="Open AI assistant chat">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+</button>
+
+<div id="chatPanel" class="chat-panel" aria-hidden="true">
+  <div class="chat-panel-header">
+    <div>
+      <strong>Ask about Abid</strong>
+      <span>Answers pulled from this page — not a live LLM</span>
+    </div>
+    <button id="chatClose" class="icon-btn" aria-label="Close chat">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <div id="chatMessages" class="chat-messages"></div>
+  <div id="chatChips" class="chat-chips"></div>
+  <form id="chatForm" class="chat-form">
+    <input id="chatInput" type="text" placeholder="Ask a question about Abid…" autocomplete="off">
+    <button type="submit" class="icon-btn chat-send" aria-label="Send">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+    </button>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
