@@ -50,7 +50,7 @@ const KB = [
   {
     id: 'who',
     keywords: ['who', 'about', 'background', 'yourself', 'introduce'],
-    answer: "Abid Sobhan is a final-year Software Engineering student at Swinburne University of Technology (BEng, final semester completing November 2026), based in Melbourne, and available full-time from mid-November 2026. He is AZ-900 certified, builds cloud and AI-integrated solutions, and has been a volunteer Student Solution Engineer and App Developer at BetaBuilders since May 2024.",
+    answer: "Abid Sobhan is a final-year Software Engineering student at Swinburne University of Technology (BEng, final semester completing November 2026), based in Melbourne, and available full-time from mid-November 2026. He is AZ-900 certified, works across solution engineering and cloud solution architecture, builds AI-integrated solutions, and has been a volunteer Student Solution Engineer and App Developer at BetaBuilders since May 2024.",
   },
   {
     id: 'education',
@@ -65,12 +65,12 @@ const KB = [
   {
     id: 'experience',
     keywords: ['experience', 'work', 'job', 'internship', 'intern', 'aakonsult', 'betabuilders', 'mcdonald'],
-    answer: "Abid interned as a Junior IT Solutions Engineer at Aakonsult Services / MULINK Technologies, delivering Microsoft 365/SharePoint solutions, AWS cloud configuration, and Salesforce case workflows for 50+ users. Since May 2024 he has been a volunteer Student Solution Engineer and App Developer at BetaBuilders, delivering solutions for platforms like FreeAppStore and FreeGameStore with a 40+ person remote team. He also worked at McDonald's from Jan 2023 to Mar 2026 in a customer-facing role.",
+    answer: "Abid interned as a Junior IT Solutions Engineer at Aakonsult Services / MULINK Technologies, delivering cloud solution architecture (AWS environment design and configuration), Microsoft 365/SharePoint solutions, and Salesforce case workflows for 50+ users. Since May 2024 he has been a volunteer Student Solution Engineer and App Developer at BetaBuilders, delivering solution engineering and cloud solution architecture for platforms like FreeAppStore and FreeGameStore with a 40+ person remote team. He also worked at McDonald's from Jan 2023 to Mar 2026 in a customer-facing role.",
   },
   {
     id: 'projects',
     keywords: ['project', 'projects', 'built', 'build', 'portfolio', 'app', 'apps'],
-    answer: "His main projects are Calazm (an AI nutrition tracker using the Claude API), DataLens (a local-first data profiling tool), ProdTrack (a full-stack productivity dashboard), QML DataFlow Studio (a self-taught quantum ML pipeline), an AI chatbot app using the OpenAI API, and an Azure cloud security deployment. Scroll to the Projects section for details on each, or ask me about a specific one.",
+    answer: "His main projects are an Azure cloud deployment with secure networking and backup/disaster recovery, Calazm (an AI nutrition tracker using the Claude API), DataLens (a local-first data profiling tool), ProdTrack (a full-stack productivity dashboard), QML DataFlow Studio (a self-taught quantum ML pipeline), an AI chatbot app using the OpenAI API, and cloud CI/CD work with Docker, GitHub Actions and Azure Static Web Apps. Scroll to the Projects section for details on each, or ask me about a specific one.",
   },
   {
     id: 'calazm',
@@ -100,7 +100,7 @@ const KB = [
   {
     id: 'availability',
     keywords: ['available', 'availability', 'start', 'when', 'hire him', 'visa'],
-    answer: "Abid's final semester ends in the first week of November 2026, and he is available to start full-time from mid-November 2026 in solution engineering, cloud, and AI-integrated roles. Best to ask him directly about timing for a specific role.",
+    answer: "Abid's final semester ends in the first week of November 2026, and he is available to start full-time from mid-November 2026 in solution engineering, cloud solution architecture, and AI-integrated roles. Best to ask him directly about timing for a specific role.",
   },
   {
     id: 'strengths',
