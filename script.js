@@ -50,12 +50,12 @@ const KB = [
   {
     id: 'who',
     keywords: ['who', 'about', 'background', 'yourself', 'introduce'],
-    answer: "Abid Sobhan is a final-year Software Engineering student at Swinburne University of Technology (BEng, expected December 2026), based in Melbourne. He is AZ-900 certified, builds cloud and AI-integrated solutions, and has been a volunteer Student Solution Engineer and App Developer at BetaBuilders since May 2024.",
+    answer: "Abid Sobhan is a final-year Software Engineering student at Swinburne University of Technology (BEng, final semester completing November 2026), based in Melbourne, and available full-time from mid-November 2026. He is AZ-900 certified, builds cloud and AI-integrated solutions, and has been a volunteer Student Solution Engineer and App Developer at BetaBuilders since May 2024.",
   },
   {
     id: 'education',
     keywords: ['education', 'degree', 'university', 'swinburne', 'study', 'studying', 'graduate', 'graduation', 'scholarship'],
-    answer: "Abid is completing a Bachelor of Engineering (Software Engineering) at Swinburne University of Technology, expected December 2026. He's a recipient of the Swinburne Excellence Scholarship, covering 75% of his tuition for academic merit.",
+    answer: "Abid is completing a Bachelor of Engineering (Software Engineering) at Swinburne University of Technology, with his final semester completing in the first week of November 2026. He's a recipient of the Swinburne Excellence Scholarship, covering 75% of his tuition for academic merit.",
   },
   {
     id: 'skills',
@@ -100,7 +100,7 @@ const KB = [
   {
     id: 'availability',
     keywords: ['available', 'availability', 'start', 'when', 'hire him', 'visa'],
-    answer: "Abid is completing his degree in December 2026 and is looking for full-time roles from November 2026 or early 2027, including solution engineering, cloud, and AI-integrated roles. Best to ask him directly about timing for a specific role.",
+    answer: "Abid's final semester ends in the first week of November 2026, and he is available to start full-time from mid-November 2026 in solution engineering, cloud, and AI-integrated roles. Best to ask him directly about timing for a specific role.",
   },
   {
     id: 'strengths',
