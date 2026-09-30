@@ -50,7 +50,7 @@ const KB = [
   {
     id: 'who',
     keywords: ['who', 'about', 'background', 'yourself', 'introduce'],
-    answer: "Abid Sobhan is a final-year Software Engineering student at Swinburne University of Technology (BEng, expected December 2026), based in Melbourne. He builds full-stack web apps and AI-integrated products, and currently works as a volunteer App Developer with a 40+ person remote team at BetaBuilders.",
+    answer: "Abid Sobhan is a final-year Software Engineering student at Swinburne University of Technology (BEng, expected December 2026), based in Melbourne. He is AZ-900 certified, builds cloud and AI-integrated solutions, and has been a volunteer Student Solution Engineer and App Developer at BetaBuilders since May 2024.",
   },
   {
     id: 'education',
@@ -60,12 +60,12 @@ const KB = [
   {
     id: 'skills',
     keywords: ['skill', 'skills', 'tech', 'stack', 'language', 'languages', 'technologies', 'know', 'proficient'],
-    answer: "His core stack: Python, C#, JavaScript/TypeScript, and SQL, with React/Next.js on the front end and Node.js/Express/Flask on the back end. He also works with Microsoft Azure and AWS, PostgreSQL/SQLite, and integrates the Claude and OpenAI APIs directly into products. Full breakdown in the Skills section above.",
+    answer: "His core stack: Python, C#, JavaScript/TypeScript, and SQL, with React/Next.js on the front end and Node.js/Express/Flask on the back end. He also works with Microsoft Azure (AZ-900 certified), AWS, Microsoft 365 and SharePoint, PostgreSQL/SQLite, and integrates the Claude and OpenAI APIs directly into products. Full breakdown in the Skills section above.",
   },
   {
     id: 'experience',
     keywords: ['experience', 'work', 'job', 'internship', 'intern', 'aakonsult', 'betabuilders', 'mcdonald'],
-    answer: "Abid interned as a Junior IT Solutions Engineer at Aakonsult Services / MULINK Technologies, supporting enterprise systems (Microsoft 365, Azure, AWS) and Salesforce case workflows for 50+ users. He currently volunteers as an App Developer at BetaBuilders with a 40+ person remote dev team, and spent 3+ years in customer-facing work at McDonald's before that.",
+    answer: "Abid interned as a Junior IT Solutions Engineer at Aakonsult Services / MULINK Technologies, delivering Microsoft 365/SharePoint solutions, AWS cloud configuration, and Salesforce case workflows for 50+ users. Since May 2024 he has been a volunteer Student Solution Engineer and App Developer at BetaBuilders, delivering solutions for platforms like FreeAppStore and FreeGameStore with a 40+ person remote team. He also worked at McDonald's from Jan 2023 to Mar 2026 in a customer-facing role.",
   },
   {
     id: 'projects',
@@ -89,8 +89,8 @@ const KB = [
   },
   {
     id: 'certifications',
-    keywords: ['certification', 'certifications', 'certificate', 'certificates', 'course', 'courses', 'udemy'],
-    answer: "Abid holds certifications including an Advanced Python Certification, Data Structures and Algorithms in Python, an SQL/PostgreSQL Bootcamp, and a Linux Command Line Bootcamp (all Udemy), plus Introduction to Cyber Security Essentials (Quitch). You can view every certificate in the Certifications section above.",
+    keywords: ['certification', 'certifications', 'certificate', 'certificates', 'course', 'courses', 'udemy', 'azure', 'az-900', 'az900'],
+    answer: "Abid holds the Microsoft Certified: Azure Fundamentals (AZ-900) certification, plus an Advanced Python Certification, Data Structures and Algorithms in Python, an SQL/PostgreSQL Bootcamp, and a Linux Command Line Bootcamp (all Udemy), plus Introduction to Cyber Security Essentials (Quitch). You can view every certificate in the Certifications section above.",
   },
   {
     id: 'contact',
@@ -100,7 +100,7 @@ const KB = [
   {
     id: 'availability',
     keywords: ['available', 'availability', 'start', 'when', 'hire him', 'visa'],
-    answer: "Abid is completing his degree in December 2026 and is looking for full-time roles from early 2027, though he's open to discussing internships or part-time opportunities sooner. Best to ask him directly about timing for a specific role.",
+    answer: "Abid is completing his degree in December 2026 and is looking for full-time roles from November 2026 or early 2027, including solution engineering, cloud, and AI-integrated roles. Best to ask him directly about timing for a specific role.",
   },
   {
     id: 'strengths',
