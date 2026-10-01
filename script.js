@@ -50,7 +50,7 @@ const KB = [
   {
     id: 'who',
     keywords: ['who', 'about', 'background', 'yourself', 'introduce'],
-    answer: "Abid Sobhan is a final-year Software Engineering student at Swinburne University of Technology (BEng, final semester completing November 2026), based in Melbourne, and available full-time from mid-November 2026. He is AZ-900 certified, works across solution engineering and cloud solution architecture, builds AI-integrated solutions, and has been a volunteer Student Solution Engineer and App Developer at BetaBuilders since May 2024.",
+    answer: "Abid Sobhan is a final-year Software Engineering student at Swinburne University of Technology (BEng, final semester completing November 2026), based in Melbourne, and available full-time from mid-November 2026. He is AZ-900 certified, works across solution engineering and cloud solution architecture, builds AI-integrated solutions, and has been a volunteer Student Solution Engineer and App Developer at BetaBuilders since May 2026.",
   },
   {
     id: 'education',
@@ -65,7 +65,7 @@ const KB = [
   {
     id: 'experience',
     keywords: ['experience', 'work', 'job', 'internship', 'intern', 'aakonsult', 'betabuilders', 'mcdonald'],
-    answer: "Abid interned as a Junior IT Solutions Engineer at Aakonsult Services / MULINK Technologies, delivering cloud solution architecture (AWS environment design and configuration), Microsoft 365/SharePoint solutions, and Salesforce case workflows for 50+ users. Since May 2024 he has been a volunteer Student Solution Engineer and App Developer at BetaBuilders, delivering solution engineering and cloud solution architecture for platforms like FreeAppStore and FreeGameStore with a 40+ person remote team. He also worked at McDonald's from Jan 2023 to Mar 2026 in a customer-facing role.",
+    answer: "Abid interned as a Junior IT Solutions Engineer at Aakonsult Services / MULINK Technologies, delivering cloud solution architecture (AWS environment design and configuration), Microsoft 365/SharePoint solutions, and Salesforce case workflows for 50+ users. Since May 2026 he has been a volunteer Student Solution Engineer and App Developer at BetaBuilders, delivering solution engineering and cloud solution architecture for platforms like FreeAppStore and FreeGameStore with a 40+ person remote team. He also worked at McDonald's from Jan 2023 to Mar 2026 in a customer-facing role.",
   },
   {
     id: 'projects',
