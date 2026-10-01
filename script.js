@@ -69,8 +69,8 @@ const KB = [
   },
   {
     id: 'projects',
-    keywords: ['project', 'projects', 'built', 'build', 'portfolio', 'app', 'apps'],
-    answer: "His main projects are an Azure cloud deployment with secure networking and backup/disaster recovery, Calazm (an AI nutrition tracker using the Claude API), DataLens (a local-first data profiling tool), ProdTrack (a full-stack productivity dashboard), QML DataFlow Studio (a self-taught quantum ML pipeline), an AI chatbot app using the OpenAI API, and cloud CI/CD work with Docker, GitHub Actions and Azure Static Web Apps. Scroll to the Projects section for details on each, or ask me about a specific one.",
+    keywords: ['project', 'projects', 'built', 'build', 'portfolio', 'app', 'apps', 'rag', 'mcp', 'retrieval', 'evaluation'],
+    answer: "His main projects are a hybrid RAG pipeline with an MCP server and a precision/recall evaluation (hybrid search lifted top-1 precision from 0.72 to 0.91 over keyword search), an Azure cloud deployment with secure networking and backup/disaster recovery, Calazm (an AI nutrition tracker using the Claude API), DataLens (a local-first data profiling tool), ProdTrack (a full-stack productivity dashboard), QML DataFlow Studio (a self-taught quantum ML pipeline), an AI chatbot app using the OpenAI API, and cloud CI/CD work with Docker, GitHub Actions and Azure Static Web Apps. Scroll to the Projects section for details on each, or ask me about a specific one.",
   },
   {
     id: 'calazm',

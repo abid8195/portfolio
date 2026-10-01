@@ -45,7 +45,7 @@
       
       <h1 class="reveal">Abid Sobhan</h1>
       <p class="hero-role reveal">Software Engineering Student &middot; Solution Engineer &middot; Cloud Solution Architecture &middot; Azure &amp; AI</p>
-      <p class="hero-lede reveal">Final-year Software Engineering student at Swinburne University of Technology and AZ-900 certified Student Solution Engineer with hands-on solution engineering, cloud solution architecture and development experience, designing secure cloud environments and building AI-integrated solutions — and looking for my next role.</p>
+      <p class="hero-lede reveal">Final-year Software Engineering student at Swinburne University of Technology and AZ-900 certified Student Solution Engineer with hands-on solution engineering, cloud solution architecture and development experience, designing secure cloud environments and building AI solutions, from RAG pipelines and MCP servers to LLM-integrated apps — and looking for my next role.</p>
       <div class="hero-cta reveal">
         <a href="#projects" class="btn btn-primary">View Projects</a>
         <a href="#certifications" class="btn btn-ghost">Certifications</a>
@@ -126,7 +126,7 @@
         <div class="skill-group reveal">
           <h3>AI / LLM</h3>
           <div class="chip-row">
-            <span class="chip">Claude API</span><span class="chip">OpenAI API</span><span class="chip">LLM-integrated apps</span>
+            <span class="chip">RAG</span><span class="chip">Hybrid search (BM25 + embeddings)</span><span class="chip">MCP servers</span><span class="chip">LLM evaluation</span><span class="chip">Claude API</span><span class="chip">OpenAI API</span><span class="chip">LLM-integrated apps</span>
           </div>
         </div>
         <div class="skill-group reveal">
@@ -200,6 +200,17 @@
     <div class="container">
       <p class="section-eyebrow reveal">Projects</p>
       <h2 class="reveal">Things I've built</h2>
+
+      <div class="project-card reveal" id="project-rag">
+        <div class="project-head">
+          <h3>Hybrid RAG + MCP Server — with Retrieval Evaluation</h3>
+          <a href="https://github.com/abid8195/hybrid-rag-mcp" target="_blank" rel="noopener" class="project-link">Code ↗</a>
+        </div>
+        <div class="chip-row small">
+          <span class="chip">Python</span><span class="chip">MCP</span><span class="chip">BM25</span><span class="chip">bge-small embeddings</span><span class="chip">RRF</span>
+        </div>
+        <p>A working retrieval pipeline that fuses BM25 keyword search with semantic search using Reciprocal Rank Fusion, with heading-aware chunking and a tokenizer that keeps identifiers like <code>E-310</code> intact. An MCP server exposes the search as tools (<code>search_docs</code>, <code>list_documents</code>) so any MCP-capable AI agent can call it. Each retrieval mode is scored against a 32-question golden dataset using precision@k, recall@k and MRR: hybrid search lifted top-1 precision from 0.72 to 0.91 over keyword search. Semantic-only scored slightly higher on this small corpus, but hybrid stays the default because semantic search fails silently on exact identifiers. <em>Measure quality rather than assume it.</em></p>
+      </div>
 
       <div class="project-card reveal">
         <div class="project-head">
