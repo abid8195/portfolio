@@ -3,341 +3,311 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abid Sobhan — Software Engineering Student & Solution Engineer</title>
-<meta name="description" content="Portfolio of Abid Sobhan — final-year Software Engineering student at Swinburne University, solution engineer and developer working across Azure, cloud, and AI-integrated applications.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%231F3A5F%22/><text x=%2250%22 y=%2268%22 font-size=%2255%22 fill=%22white%22 font-family=%22Georgia,serif%22 text-anchor=%22middle%22>A</text></svg>">
+<title>Abid Sobhan — Software Engineer</title>
+<meta name="description" content="Portfolio of Abid Sobhan — Software Engineering graduate (Swinburne University), working across Azure, cloud, C#, TypeScript and AI-integrated applications.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23000%22/><text x=%2250%22 y=%2270%22 font-size=%2260%22 fill=%22white%22 font-family=%22monospace%22 text-anchor=%22middle%22>A</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script>
+  // Apply saved theme before paint to avoid a flash.
+  try {
+    var t = localStorage.getItem('portfolio-theme');
+    if (t === 'dark') document.documentElement.classList.add('dark');
+  } catch (e) {}
+</script>
 </head>
 <body>
 
-<div class="noise-overlay" aria-hidden="true"></div>
-
 <header class="site-header" id="top">
-  <div class="container header-inner">
-    <a href="#top" class="brand">AS<span class="brand-dot">.</span></a>
-    <nav class="main-nav" id="mainNav">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <div class="header-actions">
-      <button id="themeToggle" class="icon-btn" aria-label="Toggle dark/light theme" title="Toggle theme">
-        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-      </button>
-      <button id="navToggle" class="icon-btn nav-toggle" aria-label="Toggle menu">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-      </button>
-    </div>
+  <a href="#top" class="brand">ABIDSOBHAN<span class="brand-dot">.</span></a>
+  <nav class="main-nav" id="mainNav">
+    <a href="#profile">Profile</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#open-source">Open Source</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="header-actions">
+    <button id="themeToggle" class="icon-btn" aria-label="Toggle dark/light theme" title="Toggle theme">
+      <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+    </button>
+    <button id="navToggle" class="icon-btn nav-toggle" aria-label="Toggle menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
   </div>
 </header>
 
+<aside class="side-rail" aria-label="Social links">
+  <a href="https://github.com/abid8195" target="_blank" rel="noopener" aria-label="GitHub">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+  </a>
+  <a href="https://www.linkedin.com/in/abid-sobhan-60a768224/" target="_blank" rel="noopener" aria-label="LinkedIn">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg>
+  </a>
+  <a href="mailto:103802241@student.swin.edu.au" aria-label="Email">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+  </a>
+  <span class="rail-label">ABIDSOBHAN.DEV</span>
+</aside>
+
 <main>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-inner">
-      
-      <h1 class="reveal">Abid Sobhan</h1>
-      <p class="hero-role reveal">Software Engineering Student &middot; Solution Engineer &middot; Cloud Solution Architecture &middot; Azure &amp; AI</p>
-      <p class="hero-lede reveal">Final-year Software Engineering student at Swinburne University of Technology and AZ-900 certified Student Solution Engineer with hands-on solution engineering, cloud solution architecture and development experience, designing secure cloud environments and building AI solutions, from RAG pipelines and MCP servers to LLM-integrated apps — and looking for my next role.</p>
-      <div class="hero-cta reveal">
-        <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="#certifications" class="btn btn-ghost">Certifications</a>
-        <button class="btn btn-ghost" id="heroChatBtn">Ask my AI Assistant</button>
+  <!-- PROFILE / HERO -->
+  <section id="profile" class="hero dotted">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="sq"></span> Introduction</p>
+        <h1 class="reveal">Hello, my name is Abid.</h1>
+        <p class="lede reveal">I'm a Software Engineering graduate from Swinburne University of Technology, based in Melbourne. My areas of interest include cloud infrastructure, secure and observable services, and AI-integrated products.</p>
+        <p class="lede reveal">With a <strong>detail-oriented focus</strong>, I enjoy building simple but dependable solutions that are easy to test, easy to maintain and pleasant to use.</p>
+        <div class="cta-row reveal">
+          <a class="btn btn-solid" href="mailto:103802241@student.swin.edu.au?subject=Resume%20request">Request resume <span aria-hidden="true">→</span></a>
+          <a class="btn btn-outline" href="#contact">Contact me</a>
+          <button class="btn btn-outline" id="heroChatBtn" type="button">Ask my assistant</button>
+        </div>
       </div>
-      <div class="hero-links reveal">
-        <a href="https://github.com/abid8195" target="_blank" rel="noopener">GitHub ↗</a>
-        <a href="https://www.linkedin.com/in/abid-sobhan-60a768224/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <div class="hero-card reveal" aria-hidden="true">
+        <div class="avatar-frame"><span>AS</span></div>
+        <div class="tag">&gt;_ SOLUTION ENGINEER @ BETABUILDERS</div>
       </div>
     </div>
-    <div class="hero-avatar reveal" aria-hidden="true">AS</div>
   </section>
 
   <!-- ABOUT -->
-  <section id="about" class="section">
-    <div class="container">
-      <p class="section-eyebrow reveal">About</p>
+  <section id="about" class="block">
+    <div class="wrap">
+      <p class="eyebrow">About</p>
       <h2 class="reveal">A bit about how I work</h2>
       <div class="about-grid">
         <div class="about-copy reveal">
-          <p>I'm a final-year Software Engineering student at Swinburne University of Technology (BEng, final semester completing in November 2026, available full-time from mid-November 2026), and a recipient of the <strong>Swinburne Excellence Scholarship</strong>, covering 75% of my tuition in recognition of academic merit.</p>
-          <p>I build full-stack web applications — React and TypeScript on the front end, Node.js/Express, Flask, and C# on the back end — and lately I've been especially focused on <strong>AI-integrated products</strong>: applications that call the Claude and OpenAI APIs as part of the product itself, not just as a coding aid. My most complete project, <a href="#project-calazm">Calazm</a>, is an AI nutrition tracker where a vision model reads a meal photo while all of the actual calorie and macro math happens deterministically in code — the model describes, the database quantifies.</p>
-          <p>Alongside my degree, I've worked as a Junior IT Solutions Engineer at Aakonsult Services / MULINK Technologies, delivering cloud solution architecture work (designing and configuring AWS environments), Microsoft 365 and SharePoint solutions, and managing Salesforce case workflows for 50+ users. Since May 2026 I've also been a volunteer Student Solution Engineer and App Developer with BetaBuilders, delivering solution engineering and cloud solution architecture for platforms including FreeAppStore and FreeGameStore alongside a remote team of 40+ developers across time zones. I'm also a <strong>Microsoft Certified: Azure Fundamentals (AZ-900)</strong> holder.</p>
-          <p>I like picking up technical domains I don't already know — I taught myself the fundamentals of quantum computing from scratch to build a working quantum machine learning pipeline — and I bring the same habit of methodical, documented problem-solving from three years in fast-paced customer service before I wrote a line of production code.</p>
+          <p>I'm a Software Engineering graduate (BEng, Swinburne University of Technology) and a recipient of the <strong>Swinburne Excellence Scholarship</strong>, which covered 75% of my tuition in recognition of academic merit.</p>
+          <p>I build full-stack web applications: React and TypeScript on the front end, Node.js/Express, Flask and C# on the back end. Lately I've focused on <strong>AI-integrated products</strong>, applications that call the Claude and OpenAI APIs as part of the product itself. My most complete project, <a href="#projects">Calazm</a>, is an AI nutrition tracker where a vision model reads a meal photo while all of the actual calorie and macro math happens deterministically in code. The model describes, the database quantifies.</p>
+          <p>Alongside my degree I worked as a Junior IT Solutions Engineer at Aakonsult Services / MULINK Technologies (AWS environments, Microsoft 365 and SharePoint, Salesforce case workflows for 50+ users). Since May 2026 I've also been a Student Solution Engineer and App Developer with BetaBuilders, working with a remote team of 40+ developers on FreeAppStore and FreeGameStore. I'm a <strong>Microsoft Certified: Azure Fundamentals (AZ-900)</strong> holder.</p>
+          <p>I like picking up domains I don't already know. I taught myself the fundamentals of quantum computing to build a working quantum machine learning pipeline, and I bring the same methodical, documented approach from three years in fast-paced customer service.</p>
         </div>
-        <div class="about-facts reveal">
-          <div class="fact-card">
-            <span class="fact-label">Education</span>
-            <span class="fact-value">BEng Software Engineering<br>Swinburne University · Nov 2026<br>Available full-time from mid-Nov 2026</span>
-          </div>
-          <div class="fact-card">
-            <span class="fact-label">Based in</span>
-            <span class="fact-value">Melbourne, VIC, Australia</span>
-          </div>
-          <div class="fact-card">
-            <span class="fact-label">Focus areas</span>
-            <span class="fact-value">Solution engineering · Cloud architecture · AI-integrated apps</span>
-          </div>
-          <div class="fact-card">
-            <span class="fact-label">Currently</span>
-            <span class="fact-value">Student Solution Engineer @ BetaBuilders</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills" class="section section-alt">
-    <div class="container">
-      <p class="section-eyebrow reveal">Skills</p>
-      <h2 class="reveal">Technical toolkit</h2>
-      <div class="skills-grid">
-        <div class="skill-group reveal">
-          <h3>Languages</h3>
-          <div class="chip-row">
-            <span class="chip">Python</span><span class="chip">C#</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span><span class="chip">SQL</span>
-          </div>
-        </div>
-        <div class="skill-group reveal">
-          <h3>Frontend</h3>
-          <div class="chip-row">
-            <span class="chip">React</span><span class="chip">Next.js</span><span class="chip">Tailwind CSS</span><span class="chip">Vite</span>
-          </div>
-        </div>
-        <div class="skill-group reveal">
-          <h3>Backend</h3>
-          <div class="chip-row">
-            <span class="chip">Node.js</span><span class="chip">Express.js</span><span class="chip">Flask</span><span class="chip">REST APIs</span><span class="chip">Prisma ORM</span>
-          </div>
-        </div>
-        <div class="skill-group reveal">
-          <h3>Cloud &amp; Data</h3>
-          <div class="chip-row">
-            <span class="chip">Microsoft Azure (AZ-900)</span><span class="chip">AWS</span><span class="chip">Microsoft 365</span><span class="chip">SharePoint</span><span class="chip">Azure Static Web Apps</span><span class="chip">PostgreSQL</span><span class="chip">SQLite</span>
-          </div>
-        </div>
-        <div class="skill-group reveal">
-          <h3>AI / LLM</h3>
-          <div class="chip-row">
-            <span class="chip">RAG</span><span class="chip">Hybrid search (BM25 + embeddings)</span><span class="chip">MCP servers</span><span class="chip">LLM evaluation</span><span class="chip">Claude API</span><span class="chip">OpenAI API</span><span class="chip">LLM-integrated apps</span>
-          </div>
-        </div>
-        <div class="skill-group reveal">
-          <h3>Tools</h3>
-          <div class="chip-row">
-            <span class="chip">Git</span><span class="chip">GitHub Actions CI/CD</span><span class="chip">Docker</span><span class="chip">Linux/Unix</span><span class="chip">Salesforce</span>
-          </div>
+        <div class="facts reveal">
+          <div class="fact"><span class="fact-label">Education</span><span>BEng Software Engineering<br>Swinburne University</span></div>
+          <div class="fact"><span class="fact-label">Based in</span><span>Melbourne, VIC, Australia</span></div>
+          <div class="fact"><span class="fact-label">Focus</span><span>Cloud · Secure services · AI-integrated apps</span></div>
+          <div class="fact"><span class="fact-label">Currently</span><span>Student Solution Engineer @ BetaBuilders</span></div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- EXPERIENCE -->
-  <section id="experience" class="section">
-    <div class="container">
-      <p class="section-eyebrow reveal">Experience</p>
-      <h2 class="reveal">Where I've worked</h2>
+  <section id="experience" class="block alt">
+    <div class="wrap">
+      <p class="eyebrow">Career</p>
+      <h2 class="reveal">Experience</h2>
       <div class="timeline">
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-head">
-              <h3>Junior IT Solutions Engineer <span>· Intern</span></h3>
-              <span class="timeline-date">Jun 2026 – Aug 2026</span>
-            </div>
-            <p class="timeline-org">Aakonsult Services / MULINK Technologies &middot; Melbourne, VIC</p>
-            <ul>
-              <li>Delivered cloud solution architecture work, designing and configuring AWS cloud environments and mapping client requirements to secure, scalable solutions.</li>
-              <li>Designed and delivered Microsoft 365 and SharePoint collaboration solutions, working directly with company leadership to define scope and business outcomes for 50+ users.</li>
-              <li>Owned the improvement of cloud-based enterprise systems end to end, including AWS cloud setup and configuration.</li>
-              <li>Managed Salesforce case workflows, technical support activities, and client issue analysis in a professional IT consulting environment.</li>
-              <li>Improved process efficiency by close to 20%, and produced technical documentation and reports while communicating solutions to clients and stakeholders.</li>
-            </ul>
+        <article class="t-item reveal">
+          <div class="t-head">
+            <h3>Student Solution Engineer &amp; App Developer</h3>
+            <span class="t-date">May 2026 – Present</span>
           </div>
-        </div>
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-head">
-              <h3>Student Solution Engineer &amp; App Developer <span>· Volunteer</span></h3>
-              <span class="timeline-date">May 2026 – Present</span>
-            </div>
-            <p class="timeline-org">BetaBuilders &middot; Remote</p>
-            <ul>
-              <li>Deliver solution engineering and cloud solution architecture across platforms including FreeAppStore and FreeGameStore, translating platform and user needs into technical designs and shipped features.</li>
-              <li>Built privacy-first, offline-capable web apps (e.g. DataLens) for FreeAppStore, following platform guidelines on data protection and no-tracking.</li>
-              <li>Collaborate with a remote team of 40+ developers across time zones, using TypeScript and Git-based workflows to build, test, and ship features.</li>
-              <li>Contributed to a 15% increase in user engagement through feature development.</li>
-            </ul>
+          <p class="t-org">BetaBuilders · Remote · Volunteer</p>
+          <ul>
+            <li>Deliver solution engineering and cloud solution architecture across platforms including FreeAppStore and FreeGameStore, translating platform and user needs into technical designs and shipped features.</li>
+            <li>Built privacy-first, offline-capable web apps (e.g. DataLens) for FreeAppStore, following platform guidelines on data protection and no-tracking.</li>
+            <li>Collaborate with a remote team of 40+ developers across time zones, using TypeScript and Git-based workflows to build, test, and ship features.</li>
+            <li>Contributed to a 15% increase in user engagement through feature development.</li>
+          </ul>
+        </article>
+        <article class="t-item reveal">
+          <div class="t-head">
+            <h3>Junior IT Solutions Engineer</h3>
+            <span class="t-date">Jun 2026 – Aug 2026</span>
           </div>
-        </div>
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-head">
-              <h3>Crew Member</h3>
-              <span class="timeline-date">Jan 2023 – Mar 2026</span>
-            </div>
-            <p class="timeline-org">McDonald's &middot; Malvern East, Melbourne</p>
-            <ul>
-              <li>Maintained consistently high performance ratings for teamwork and reliability in a fast-paced, high-volume environment.</li>
-            </ul>
+          <p class="t-org">Aakonsult Services / MULINK Technologies · Melbourne, VIC · Intern</p>
+          <ul>
+            <li>Delivered cloud solution architecture work, designing and configuring AWS environments and mapping client requirements to secure, scalable solutions.</li>
+            <li>Designed and delivered Microsoft 365 and SharePoint collaboration solutions for 50+ users, working with company leadership to define scope and business outcomes.</li>
+            <li>Owned improvement of cloud-based enterprise systems end to end, including AWS setup and configuration.</li>
+            <li>Managed Salesforce case workflows, technical support activities and client issue analysis.</li>
+            <li>Improved process efficiency by close to 20%, and produced technical documentation and reports for clients and stakeholders.</li>
+          </ul>
+        </article>
+        <article class="t-item reveal">
+          <div class="t-head">
+            <h3>Crew Member</h3>
+            <span class="t-date">Jan 2023 – Mar 2026</span>
           </div>
-        </div>
+          <p class="t-org">McDonald's · Malvern East, Melbourne</p>
+          <ul>
+            <li>Maintained consistently high performance ratings for teamwork and reliability in a fast-paced, high-volume environment.</li>
+          </ul>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects" class="section section-alt">
-    <div class="container">
-      <p class="section-eyebrow reveal">Projects</p>
-      <h2 class="reveal">Things I've built</h2>
-
-      <div class="project-card reveal" id="project-rag">
-        <div class="project-head">
-          <h3>Hybrid RAG + MCP Server — with Retrieval Evaluation</h3>
-          <a href="https://github.com/abid8195/hybrid-rag-mcp" target="_blank" rel="noopener" class="project-link">Code ↗</a>
+  <section id="projects" class="block">
+    <div class="wrap">
+      <div class="block-head">
+        <div>
+          <p class="eyebrow">Engineering</p>
+          <h2 class="reveal">Pinned Projects</h2>
         </div>
-        <div class="chip-row small">
-          <span class="chip">Python</span><span class="chip">MCP</span><span class="chip">BM25</span><span class="chip">bge-small embeddings</span><span class="chip">RRF</span>
-        </div>
-        <p>A working retrieval pipeline that fuses BM25 keyword search with semantic search using Reciprocal Rank Fusion, with heading-aware chunking and a tokenizer that keeps identifiers like <code>E-310</code> intact. An MCP server exposes the search as tools (<code>search_docs</code>, <code>list_documents</code>) so any MCP-capable AI agent can call it. Each retrieval mode is scored against a 32-question golden dataset using precision@k, recall@k and MRR: hybrid search lifted top-1 precision from 0.72 to 0.91 over keyword search. Semantic-only scored slightly higher on this small corpus, but hybrid stays the default because semantic search fails silently on exact identifiers. <em>Measure quality rather than assume it.</em></p>
+        <a class="link-caps" href="https://github.com/abid8195?tab=repositories" target="_blank" rel="noopener">View all repositories ↗</a>
       </div>
 
-      <div class="project-card reveal">
-        <div class="project-head">
-          <h3>Azure Cloud Deployment — Secure Network, Backup &amp; DR</h3>
-           <a href="https://github.com/abid8195/Azure-Cloud-Deployment-Project" target="_blank" rel="noopener" class="project-link">Project Structure ↗</a>
-        </div>
-        <div class="chip-row small">
-          <span class="chip">Azure VNet</span><span class="chip">NSG</span><span class="chip">Windows Server</span><span class="chip">Recovery Services Vault</span>
-        </div>
-        <p>Designed and deployed an enterprise-style Azure architecture end to end: a subnetted VNet with public and private subnets, a Windows Server VM, and NSG firewall rules for RDP/HTTP with access control for 100+ simulated users. Implemented backup and disaster recovery with a Recovery Services Vault, tested restore procedures, and documented the design in an architecture diagram and project report.</p>
+      <div class="card-grid">
+
+        <article class="card reveal">
+          <div class="card-top">
+            <h3><svg class="folder" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>secure-booking-api</h3>
+            <a class="ext" href="https://github.com/abid8195/secure-booking-api" target="_blank" rel="noopener" aria-label="Open secure-booking-api on GitHub">↗</a>
+          </div>
+          <p>ASP.NET Core 8 booking API with a layered design, domain invariants, xUnit unit and integration tests, and a GitHub Actions pipeline with CodeQL. In progress: auth, OpenTelemetry, feature flag and incident write-up.</p>
+          <div class="tags"><span>C#</span><span>ASP.NET Core</span><span>xUnit</span><span>CodeQL</span></div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top">
+            <h3><svg class="folder" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>hybrid-rag-mcp</h3>
+            <a class="ext" href="https://github.com/abid8195/hybrid-rag-mcp" target="_blank" rel="noopener" aria-label="Open hybrid-rag-mcp on GitHub">↗</a>
+          </div>
+          <p>BM25 + semantic search fused with Reciprocal Rank Fusion, exposed through an MCP server and scored on a 32-question golden dataset. Hybrid search lifted top-1 precision from 0.72 to 0.91 over keyword search.</p>
+          <div class="tags"><span>Python</span><span>MCP</span><span>BM25</span><span>RRF</span></div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top">
+            <h3><svg class="folder" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>freight-query-lab</h3>
+            <a class="ext" href="https://github.com/abid8195/freight-query-lab" target="_blank" rel="noopener" aria-label="Open freight-query-lab on GitHub">↗</a>
+          </div>
+          <p>PostgreSQL 16 query-tuning lab on a synthetic freight platform: execution plans, one-at-a-time fixes, and a Parquet/DuckDB warehouse with data-quality checks.</p>
+          <div class="tags"><span>PostgreSQL</span><span>DuckDB</span><span>Parquet</span></div>
+        </article>
+
+        <article class="card reveal" id="project-calazm">
+          <div class="card-top">
+            <h3><svg class="folder" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>calazm</h3>
+            <a class="ext" href="https://github.com/abid8195/calazm" target="_blank" rel="noopener" aria-label="Open calazm on GitHub">↗</a>
+          </div>
+          <p>AI nutrition companion. Claude's vision model returns a food label, weight and confidence; a deterministic resolver computes nutrition from a per-100g database. Falls back to an offline heuristic if the API is unavailable.</p>
+          <div class="tags"><span>Next.js</span><span>TypeScript</span><span>Prisma</span><span>Claude API</span></div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top">
+            <h3><svg class="folder" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>datalens</h3>
+            <a class="ext" href="https://github.com/abid8195/datalens" target="_blank" rel="noopener" aria-label="Open datalens on GitHub">↗</a>
+          </div>
+          <p>Privacy-first, local-first tool that profiles CSV, Excel and JSON files entirely in the browser, with column statistics and a deterministic data-quality score. No data is uploaded.</p>
+          <div class="tags"><span>TypeScript</span><span>React</span><span>Vite</span></div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top">
+            <h3><svg class="folder" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>Azure-Cloud-Deployment-Project</h3>
+            <a class="ext" href="https://github.com/abid8195/Azure-Cloud-Deployment-Project" target="_blank" rel="noopener" aria-label="Open Azure-Cloud-Deployment-Project on GitHub">↗</a>
+          </div>
+          <p>Enterprise-style Azure architecture: subnetted VNet, Windows Server VM, NSG rules with access control for 100+ simulated users, and backup and disaster recovery with a tested restore procedure.</p>
+          <div class="tags"><span>Azure VNet</span><span>NSG</span><span>Recovery Services Vault</span></div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top">
+            <h3><svg class="folder" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>weather-app-devops</h3>
+            <a class="ext" href="https://github.com/abid8195/weather-app-devops" target="_blank" rel="noopener" aria-label="Open weather-app-devops on GitHub">↗</a>
+          </div>
+          <p>Automated build and smoke-test pipelines for a containerised web app with Docker and GitHub Actions, plus a static web app deployed to Azure Static Web Apps through CI/CD.</p>
+          <div class="tags"><span>Docker</span><span>GitHub Actions</span><span>Azure SWA</span></div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top">
+            <h3><svg class="folder" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>Productivity_Analytics_Dashboard</h3>
+            <a class="ext" href="https://github.com/abid8195/Productivity_Analytics_Dashboard" target="_blank" rel="noopener" aria-label="Open Productivity_Analytics_Dashboard on GitHub">↗</a>
+          </div>
+          <p>Full-stack analytics dashboard for tracking personal productivity, with JWT authentication, CRUD operations, filtering and a responsive interface.</p>
+          <div class="tags"><span>React</span><span>Express</span><span>SQLite</span><span>Recharts</span></div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top">
+            <h3><svg class="folder" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>EnG_ProjectA</h3>
+            <a class="ext" href="https://github.com/abid8195/EnG_ProjectA" target="_blank" rel="noopener" aria-label="Open EnG_ProjectA on GitHub">↗</a>
+          </div>
+          <p>QML DataFlow Studio: a modular quantum machine learning pipeline orchestrated through REST APIs, built after self-teaching quantum computing fundamentals.</p>
+          <div class="tags"><span>Python</span><span>Flask</span><span>Qiskit</span></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- OPEN SOURCE / GITHUB (live) -->
+  <section id="open-source" class="block alt">
+    <div class="wrap">
+      <p class="eyebrow">Live from GitHub</p>
+      <h2 class="reveal">Open Source &amp; Activity</h2>
+      <p class="section-lede reveal">Pull requests I've opened against repositories I don't own, and my most recently updated repositories. Loaded from the public GitHub API when you open this page.</p>
+
+      <div class="stats reveal" id="ghStats">
+        <div class="stat"><span class="stat-num" id="statRepos">–</span><span class="stat-label">Public repositories</span></div>
+        <div class="stat"><span class="stat-num" id="statPRs">–</span><span class="stat-label">External pull requests</span></div>
+        <div class="stat"><span class="stat-num" id="statMerged">–</span><span class="stat-label">Merged</span></div>
       </div>
 
-      <div class="project-card reveal" id="project-calazm">
-        <div class="project-head">
-          <h3>Calazm — AI Nutrition Companion</h3>
-          <a href="https://github.com/abid8195/calazm" target="_blank" rel="noopener" class="project-link">Code ↗</a>
-        </div>
-        <div class="chip-row small">
-          <span class="chip">Next.js</span><span class="chip">TypeScript</span><span class="chip">Prisma</span><span class="chip">PostgreSQL/SQLite</span><span class="chip">Claude API</span>
-        </div>
-        <p>An AI-powered nutrition tracker that estimates meals from photos or natural language. The architecture deliberately separates concerns: Claude's vision model never estimates calories directly — it returns a food label, an estimated weight, and a confidence score, and a deterministic resolver computes actual nutrition from a real per-100g database. <em>The model describes, the database quantifies.</em> The app uses three different Claude models for three distinct jobs — vision for photo recognition, a fast model for text normalization, and a larger model for weekly narrative summaries — and falls back gracefully to an offline heuristic if the API is ever unavailable.</p>
-      </div>
+      <h3 class="sub">Pull requests</h3>
+      <div class="feed" id="prFeed"><p class="muted">Loading…</p></div>
 
-      <div class="project-card reveal">
-        <div class="project-head">
-          <h3>DataLens — Local-First Data Health Checker</h3>
-          <a href="https://github.com/abid8195/datalens" target="_blank" rel="noopener" class="project-link">Code ↗</a>
-        </div>
-        <div class="chip-row small">
-          <span class="chip">TypeScript</span><span class="chip">React</span><span class="chip">Vite</span><span class="chip">Privacy-first</span>
-        </div>
-        <p>A privacy-first, local-first tool that profiles CSV, Excel, and JSON files entirely in the browser — turning messy datasets into column-level statistics, distributions, and a deterministic data-quality score, without ever uploading the data anywhere.</p>
-      </div>
+      <h3 class="sub">Recently updated repositories</h3>
+      <div class="feed" id="repoFeed"><p class="muted">Loading…</p></div>
 
-      <div class="project-card reveal">
-        <div class="project-head">
-          <h3>Cloud CI/CD &amp; Containerisation</h3>
-          <a href="https://github.com/abid8195/weather-app-devops" target="_blank" rel="noopener" class="project-link">Code ↗</a>
-        </div>
-        <div class="chip-row small">
-          <span class="chip">Docker</span><span class="chip">GitHub Actions</span><span class="chip">Azure Static Web Apps</span>
-        </div>
-        <p>Automated build and smoke-test pipelines for a containerised web app using Docker and GitHub Actions, and deployed a static web app to <a href="https://github.com/abid8195/DemoCode" target="_blank" rel="noopener">Azure Static Web Apps</a> through a CI/CD workflow.</p>
-      </div>
+      <a class="link-caps" href="https://github.com/abid8195" target="_blank" rel="noopener">View full activity on GitHub ↗</a>
+    </div>
+  </section>
 
-      <div class="project-card reveal">
-        <div class="project-head">
-          <h3>ProdTrack — Full-Stack Productivity Dashboard</h3>
-          <a href="https://github.com/abid8195/Productivity_Analytics_Dashboard" target="_blank" rel="noopener" class="project-link">Code ↗</a>
-        </div>
-        <div class="chip-row small">
-          <span class="chip">React</span><span class="chip">Express.js</span><span class="chip">SQLite</span><span class="chip">Recharts</span>
-        </div>
-        <p>A full-stack analytics dashboard for tracking and visualizing personal productivity, with JWT authentication, CRUD operations, filtering systems, and a responsive, SaaS-style interface.</p>
+  <!-- TOOLKIT -->
+  <section id="toolkit" class="block">
+    <div class="wrap">
+      <p class="eyebrow">Toolkit</p>
+      <h2 class="reveal">Tech Stack</h2>
+      <p class="section-lede reveal">A snapshot of what I work with. Plenty more I'd love to learn.</p>
+      <div class="stack reveal">
+        <div class="stack-row"><span>Languages</span><span>C#, Python, TypeScript, JavaScript, SQL</span></div>
+        <div class="stack-row"><span>Frontend</span><span>React, Next.js, Tailwind CSS, Vite</span></div>
+        <div class="stack-row"><span>Backend</span><span>ASP.NET Core, Node.js, Express, Flask, Prisma</span></div>
+        <div class="stack-row"><span>Cloud &amp; DevOps</span><span>Azure (AZ-900), AWS, Docker, GitHub Actions, Microsoft 365</span></div>
+        <div class="stack-row"><span>Data &amp; AI</span><span>PostgreSQL, SQLite, DuckDB, RAG, MCP, Claude API, OpenAI API</span></div>
       </div>
-
-      <div class="project-card reveal">
-        <div class="project-head">
-          <h3>QML DataFlow Studio — Quantum Machine Learning Pipeline</h3>
-          <a href="https://github.com/abid8195/EnG_ProjectA" target="_blank" rel="noopener" class="project-link">Code ↗</a>
-        </div>
-        <div class="chip-row small">
-          <span class="chip">Python</span><span class="chip">Flask</span><span class="chip">Qiskit</span><span class="chip">JavaScript</span>
-        </div>
-        <p>Self-taught quantum computing fundamentals from scratch to build a modular quantum machine learning pipeline, orchestrating multiple features through REST APIs with a Python/Flask backend.</p>
-      </div>
-
-      <div class="project-card reveal">
-        <div class="project-head">
-          <h3>AI Chatbot Application</h3>
-          <a href="https://github.com/abid8195/AI-Chatbot-Rufus-the-Egg-Enthusiast" target="_blank" rel="noopener" class="project-link">Code ↗</a>
-        </div>
-        <div class="chip-row small">
-          <span class="chip">JavaScript</span><span class="chip">OpenAI API</span><span class="chip">LLM Integration</span>
-        </div>
-        <p>A customer-facing web application integrating the OpenAI API to handle 200+ dynamic user queries, iterated through several architectures to improve the response consistency by 25%.</p>
-      </div>
-
     </div>
   </section>
 
   <!-- CERTIFICATIONS -->
-  <section id="certifications" class="section">
-    <div class="container">
-      <p class="section-eyebrow reveal">Certifications</p>
-      <h2 class="reveal">Continued learning</h2>
-      <p class="reveal cert-intro">All certificates are available to view in full on Google Drive.</p>
-      <a class="btn btn-primary reveal" href="https://drive.google.com/drive/u/0/folders/1y88Zyl-kYHkN8EToo9BZAwYTRRW4lRBJ" target="_blank" rel="noopener">View All Certificates ↗</a>
+  <section id="certifications" class="block alt">
+    <div class="wrap">
+      <p class="eyebrow">Learning</p>
+      <h2 class="reveal">Certifications</h2>
       <div class="cert-grid reveal">
-        <a class="cert-card" href="https://drive.google.com/drive/u/0/folders/1y88Zyl-kYHkN8EToo9BZAwYTRRW4lRBJ" target="_blank" rel="noopener">
-          <span class="cert-name">Microsoft Certified: Azure Fundamentals (AZ-900)</span>
-          <span class="cert-issuer">Microsoft · Sep 2026</span>
-        </a>
-        <a class="cert-card" href="https://drive.google.com/drive/u/0/folders/1y88Zyl-kYHkN8EToo9BZAwYTRRW4lRBJ" target="_blank" rel="noopener">
-          <span class="cert-name">Advanced Python Certification</span>
-          <span class="cert-issuer">Udemy</span>
-        </a>
-        <a class="cert-card" href="https://drive.google.com/drive/u/0/folders/1y88Zyl-kYHkN8EToo9BZAwYTRRW4lRBJ" target="_blank" rel="noopener">
-          <span class="cert-name">Data Structures and Algorithms in Python</span>
-          <span class="cert-issuer">Udemy</span>
-        </a>
-        <a class="cert-card" href="https://drive.google.com/drive/u/0/folders/1y88Zyl-kYHkN8EToo9BZAwYTRRW4lRBJ" target="_blank" rel="noopener">
-          <span class="cert-name">SQL Bootcamp: Implementing PostgreSQL</span>
-          <span class="cert-issuer">Udemy</span>
-        </a>
-        <a class="cert-card" href="https://drive.google.com/drive/u/0/folders/1y88Zyl-kYHkN8EToo9BZAwYTRRW4lRBJ" target="_blank" rel="noopener">
-          <span class="cert-name">Linux Command Line Bootcamp</span>
-          <span class="cert-issuer">Udemy</span>
-        </a>
-        <a class="cert-card" href="https://drive.google.com/drive/u/0/folders/1y88Zyl-kYHkN8EToo9BZAwYTRRW4lRBJ" target="_blank" rel="noopener">
-          <span class="cert-name">Introduction to Cyber Security Essentials</span>
-          <span class="cert-issuer">Quitch</span>
-        </a>
+        <a class="cert" href="https://drive.google.com/drive/u/0/folders/1y88Zyl-kYHkN8EToo9BZAwYTRRW4lRBJ" target="_blank" rel="noopener"><b>Microsoft Certified: Azure Fundamentals (AZ-900)</b><span>Microsoft · Sep 2026</span></a>
+        <a class="cert" href="https://drive.google.com/drive/u/0/folders/1y88Zyl-kYHkN8EToo9BZAwYTRRW4lRBJ" target="_blank" rel="noopener"><b>Advanced Python Certification</b><span>Udemy</span></a>
+        <a class="cert" href="https://drive.google.com/drive/u/0/folders/1y88Zyl-kYHkN8EToo9BZAwYTRRW4lRBJ" target="_blank" rel="noopener"><b>Data Structures and Algorithms in Python</b><span>Udemy</span></a>
+        <a class="cert" href="https://drive.google.com/drive/u/0/folders/1y88Zyl-kYHkN8EToo9BZAwYTRRW4lRBJ" target="_blank" rel="noopener"><b>SQL Bootcamp: Implementing PostgreSQL</b><span>Udemy</span></a>
+        <a class="cert" href="https://drive.google.com/drive/u/0/folders/1y88Zyl-kYHkN8EToo9BZAwYTRRW4lRBJ" target="_blank" rel="noopener"><b>Linux Command Line Bootcamp</b><span>Udemy</span></a>
+        <a class="cert" href="https://drive.google.com/drive/u/0/folders/1y88Zyl-kYHkN8EToo9BZAwYTRRW4lRBJ" target="_blank" rel="noopener"><b>Introduction to Cyber Security Essentials</b><span>Quitch</span></a>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="section section-alt">
-    <div class="container contact-inner">
-      <p class="section-eyebrow reveal">Contact</p>
+  <section id="contact" class="block">
+    <div class="wrap">
+      <p class="eyebrow">Contact</p>
       <h2 class="reveal">Let's talk</h2>
-      <p class="reveal contact-lede">I'm looking for solution engineering, cloud solution architecture, or AI-integrated engineering roles and I'm available to start full-time from mid-November 2026 — reach out any time.</p>
-      <div class="contact-links reveal">
-        <a href="mailto:103802241@student.swin.edu.au" class="btn btn-primary">Email Me</a>
-        <a href="https://www.linkedin.com/in/abid-sobhan-60a768224/" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn ↗</a>
-        <a href="https://github.com/abid8195" target="_blank" rel="noopener" class="btn btn-ghost">GitHub ↗</a>
+      <p class="section-lede reveal">I'm looking for software engineering, cloud and AI-integrated engineering roles. Reach out any time.</p>
+      <div class="cta-row reveal">
+        <a class="btn btn-solid" href="mailto:103802241@student.swin.edu.au">Contact me <span aria-hidden="true">→</span></a>
+        <a class="btn btn-outline" href="https://www.linkedin.com/in/abid-sobhan-60a768224/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn btn-outline" href="https://github.com/abid8195" target="_blank" rel="noopener">GitHub ↗</a>
       </div>
     </div>
   </section>
@@ -345,14 +315,14 @@
 </main>
 
 <footer class="site-footer">
-  <div class="container">
-    <p>&copy; 2026 Abid Sobhan. Built with plain HTML, CSS &amp; JS — deployed on Vercel.</p>
+  <div class="wrap">
+    <p>&copy; 2026 Abid Sobhan. Plain HTML, CSS &amp; JS, deployed on Vercel.</p>
   </div>
 </footer>
 
 <!-- CHATBOT WIDGET -->
-<button id="chatFab" class="chat-fab" aria-label="Open AI assistant chat">
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+<button id="chatFab" class="chat-fab" aria-label="Open assistant chat">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
 </button>
 
 <div id="chatPanel" class="chat-panel" aria-hidden="true">

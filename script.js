@@ -2,16 +2,9 @@
 (function () {
   const root = document.documentElement;
   const toggle = document.getElementById('themeToggle');
-  let saved = null;
-  try { saved = localStorage.getItem('portfolio-theme'); } catch (e) {}
-  if (saved) root.setAttribute('data-theme', saved);
-
   toggle.addEventListener('click', () => {
-    const current = root.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
-    const next = current === 'light' ? 'dark' : 'light';
-    if (next === 'dark') root.removeAttribute('data-theme');
-    else root.setAttribute('data-theme', 'light');
-    try { localStorage.setItem('portfolio-theme', next); } catch (e) {}
+    const dark = root.classList.toggle('dark');
+    try { localStorage.setItem('portfolio-theme', dark ? 'dark' : 'light'); } catch (e) {}
   });
 })();
 
@@ -201,5 +194,77 @@ function matchAnswer(text) {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     handleUserMessage(input.value);
+  });
+})();
+
+// ---------- live GitHub feed (public API, unauthenticated) ----------
+(function () {
+  const USER = 'abid8195';
+  const API = 'https://api.github.com';
+  const prFeed = document.getElementById('prFeed');
+  const repoFeed = document.getElementById('repoFeed');
+  if (!prFeed || !repoFeed) return;
+
+  const fmt = (iso) => new Date(iso).toLocaleDateString('en-AU', { month: 'short', day: 'numeric', year: 'numeric' });
+  const el = (tag, cls, text) => {
+    const n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text !== undefined) n.textContent = text; // textContent: API data is never injected as HTML
+    return n;
+  };
+  const fail = (box) => { box.replaceChildren(el('p', 'muted', 'Could not load from GitHub right now. See github.com/' + USER + ' directly.')); };
+  const get = (url) => fetch(url, { headers: { Accept: 'application/vnd.github+json' } }).then((r) => {
+    if (!r.ok) throw new Error(r.status);
+    return r.json();
+  });
+
+  // Public repositories + recently updated
+  get(API + '/users/' + USER).then((u) => {
+    document.getElementById('statRepos').textContent = u.public_repos;
+  }).catch(() => {});
+
+  get(API + '/users/' + USER + '/repos?sort=pushed&per_page=6&type=owner').then((repos) => {
+    repoFeed.replaceChildren();
+    repos.forEach((r) => {
+      const a = el('a', 'feed-item');
+      a.href = r.html_url; a.target = '_blank'; a.rel = 'noopener';
+      a.appendChild(el('span', 'badge closed', r.language || 'repo'));
+      const mid = el('div');
+      mid.appendChild(el('span', 'feed-title', r.name));
+      mid.appendChild(el('span', 'feed-meta', r.description || 'No description'));
+      a.appendChild(mid);
+      a.appendChild(el('span', 'feed-date', fmt(r.pushed_at)));
+      repoFeed.appendChild(a);
+    });
+  }).catch(() => fail(repoFeed));
+
+  // Pull requests opened against repositories not owned by the user
+  const q = encodeURIComponent('author:' + USER + ' type:pr -user:' + USER);
+  get(API + '/search/issues?q=' + q + '&sort=created&order=desc&per_page=10').then((res) => {
+    document.getElementById('statPRs').textContent = res.total_count;
+    const items = res.items || [];
+    const merged = items.filter((i) => i.pull_request && i.pull_request.merged_at).length;
+    document.getElementById('statMerged').textContent = res.total_count > items.length ? merged + '+' : merged;
+    prFeed.replaceChildren();
+    if (!items.length) {
+      prFeed.appendChild(el('p', 'muted', 'No external pull requests yet. This list fills in automatically when there are some.'));
+      return;
+    }
+    items.forEach((i) => {
+      const repo = i.repository_url.split('/repos/')[1];
+      const state = i.pull_request && i.pull_request.merged_at ? 'merged' : i.state;
+      const a = el('a', 'feed-item');
+      a.href = i.html_url; a.target = '_blank'; a.rel = 'noopener';
+      a.appendChild(el('span', 'badge ' + state, state));
+      const mid = el('div');
+      mid.appendChild(el('span', 'feed-title', i.title));
+      mid.appendChild(el('span', 'feed-meta', repo + '#' + i.number));
+      a.appendChild(mid);
+      a.appendChild(el('span', 'feed-date', fmt(i.created_at)));
+      prFeed.appendChild(a);
+    });
+  }).catch(() => {
+    ['statPRs', 'statMerged'].forEach((id) => { document.getElementById(id).textContent = '–'; });
+    fail(prFeed);
   });
 })();
